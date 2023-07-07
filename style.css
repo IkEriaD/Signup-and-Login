@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins' sans-serif;
+  color: #1f3c5c;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background: #f0f8ff;
+}
+
+.container {
+  background: url('https://img.freepik.com/free-photo/tiger-looking-with-open-mouth_1150-18083.jpg?size=626&ext=jpg&ga=GA1.2.597781842.1685241639&semt=ais');
+
+  height: 60rem;
+  width: 38rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: 0 40px 40px -20px gray;
+  border-radius: 3px;
+}
+
+.card {
+ position: absolute;
+ height: 100%;
+ width: 100%; 
+transition: .5s;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.main h2 {
+  font-size: 2.5rem;
+  margin-bottom: 22rem;
+  text-align: center;
+  letter-spacing: -1px;
+  padding: 0 3rem;
+}
+
+.button a {
+  background: rgba(225, 255, 255, .5);
+}
+
+.button a, .btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 1.5rem;
+  padding: 1rem 3rem;
+  border-radius: 3px;
+  transition: .3s;
+}
+
+.btn {
+  background-color: white;
+  padding: 1rem 5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem; 
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 5rem;
+}
+
+.field {
+  position: relative;
+}
+
+input {
+ border: none;
+ background-color: transparent;
+ border-bottom: 3px solid white;
+ margin: 1.5rem 0;
+ padding: 1rem;
+ color: white;
+ outline: none; 
+ transition: .5s;
+}
+
+label {
+ position: absolute;
+ top: 40%;
+ left: 11rem;
+ font-size: 1.5rem;
+ color: white;
+ pointer-events: none; 
+ transition: .3s;
+}
+
+input::placeholder {
+  color: transparent;
+}
+
+.fgpass {
+  display: block;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#signup, #signin {
+  z-index: 1;
+  background-color: #6384a2a1;
+  backdrop-filter: blur(4px);
+  text-align: center;
+}
+
+#signup {
+ transform: translateX(40rem);
+}
+
+#signin {
+  transform: translateX(-40rem);
+}
+
+/* HOVER EFFECTS  */
+
+.button a:hover {
+  background-color: white;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px -5px black;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+input:focus {
+  border-bottom: 3px solid #1f3c5c;
+  transform: scale(1.05);
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: 0%;
+  color: #1f3c5c;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.fgpass:hover {
+  color: white;
+}
+
+.container {
+  overflow: hidden;
+}
